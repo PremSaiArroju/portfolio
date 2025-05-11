@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-Check out the live portfolio website: [https://prem-sai-portfolio.vercel.app/](https://prem-sai-portfolio.vercel.app/)
+Check out the live portfolio website: [https://premsaiarroju.netlify.app/](hhttps://premsaiarroju.netlify.app/)
 
 ## 📋 Overview
 
