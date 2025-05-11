@@ -56,7 +56,7 @@ This is my personal portfolio website showcasing my skills, experience, projects
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/PremSaiArroju/portfolio-website.git
+   git clone https://github.com/PremSaiArroju/portfolio.git
    cd portfolio-website
    ```
 
