@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       name,
       email,
       message,
-      recipientEmail: "sainikhilreddy.kura@slu.edu",
+      recipientEmail: "premsai7373@gmail.com",
     })
 
     if (result.success) {
