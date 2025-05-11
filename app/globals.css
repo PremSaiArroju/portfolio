@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 328 73.4% 44.4%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 328 73.4% 44.4%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 328 73.4% 44.4%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 328 73.4% 44.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Roadmap navigation styles */
+.roadmap-container {
+  padding: 2rem 0;
+}
+
+.roadmap-step {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.roadmap-step:hover .border-muted-foreground {
+  border-color: hsl(var(--foreground) / 0.7);
+}
+
+.roadmap-step:hover .text-muted-foreground {
+  color: hsl(var(--foreground) / 0.7);
+}
+
+/* Progress line styles */
+.roadmap-progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background-color: hsl(var(--foreground));
+  transform: translateY(-50%);
+  transition: width 0.3s ease;
+}
+
+/* Custom background styles */
+.bg-standard-dark {
+  background-color: #121212;
+}
+
+.bg-header {
+  background-color: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bg-footer {
+  background-color: #121212;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Badge styling */
+.badge {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 4K quality enhancements */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2400px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+}
+
+/* Instagram-inspired gradient for special elements */
+.instagram-gradient {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow effect for primary elements */
+.glow-effect {
+  box-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
+}
+
+/* High-resolution image quality */
+img {
+  image-rendering: high-quality;
+}
