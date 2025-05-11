@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-Check out the live portfolio website: [https://premsaiarroju.netlify.app/](hhttps://premsaiarroju.netlify.app/)
+Check out the live portfolio website: [https://premsaiarroju.netlify.app/](https://premsaiarroju.netlify.app/)
 
 ## 📋 Overview
 
