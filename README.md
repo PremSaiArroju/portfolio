@@ -33,7 +33,7 @@ This is my personal portfolio website showcasing my skills, experience, projects
   - Nodemailer for form submission
 
 - **Deployment**:
-  - Vercel
+  - Netlify
 
 ## 📚 Sections
 
